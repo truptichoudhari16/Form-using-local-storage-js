@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form || Local Storage</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <div class="form-box">
+          <div class="form">
+            <h2>Sign Up</h2>
+            <!-- Read & Store user data  -->
+
+            <form
+              role="form"
+              action="DisplayData.html"
+              onsubmit="register(event);"
+            >
+              <div class="input-box">
+                <!-- <label for="">First Name</label> -->
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="First Name"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <!-- <label for="">Last Name</label> -->
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <!-- <label for="">Email Address</label> -->
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <!-- <label for="">Password</label> -->
+                <input
+                  type="password"
+                  name="pwd"
+                  id="pwd"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <!-- <div class="form-group">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="Phone Number"
+            required
+          />
+        </div> -->
+
+              <div class="group">
+                <a href="#">Forgot Password</a>
+                <a href="#">Sign In</a>
+              </div>
+
+              <button type="submit"><a href="login.html">Sign Up</a></button>
+              <button type="reset" class="reset">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
